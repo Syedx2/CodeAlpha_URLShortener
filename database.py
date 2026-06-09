@@ -12,7 +12,7 @@ from datetime import datetime
 # Configuration
 # ---------------------------------------------------------------------------
 
-POSTGRES_URL = os.environ.get("POSTGRES_URL") or os.environ.get("DATABASE_URL")
+POSTGRES_URL = os.environ.get("POSTGRES_URL") or os.environ.get("DATABASE_URL") or os.environ.get("STORAGE_URL")
 USE_POSTGRES = bool(POSTGRES_URL)
 
 if USE_POSTGRES:

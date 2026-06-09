@@ -573,6 +573,33 @@ body {
     opacity: 0.6;
 }
 
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 12px 0 8px;
+}
+
+.footer__links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.footer__links a:hover {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: var(--accent-purple);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
 /* --- Responsive --- */
 @media (max-width: 600px) {
     .app-container {

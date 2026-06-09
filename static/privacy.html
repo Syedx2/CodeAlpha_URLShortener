@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Privacy Policy — Sniplink URL Shortener</title>
+    <meta name="description" content="Read our privacy commitments at Sniplink. Learn why we collect zero tracking cookies, use localStorage for link history, and how database redirections work.">
+    <meta name="author" content="Syed">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sniplink.vercel.app/privacy">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy — Sniplink URL Shortener">
+    <meta property="og:description" content="Read our privacy commitments at Sniplink. Learn about our cookie-free design and LocalStorage link history.">
+    <meta property="og:url" content="https://sniplink.vercel.app/privacy">
+    <meta property="og:site_name" content="Sniplink">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Animated background -->
+    <div class="bg-gradient" aria-hidden="true"></div>
+
+    <div class="app-container">
+
+        <!-- Back Navigation -->
+        <nav aria-label="Breadcrumb">
+            <a href="/" class="back-link" id="btn-back-home">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"/>
+                    <polyline points="12 19 5 12 12 5"/>
+                </svg>
+                <span>Back to Home</span>
+            </a>
+        </nav>
+
+        <!-- Privacy Content Card -->
+        <main>
+            <article class="card info-card" id="privacy-card">
+                <h1 class="info-title">Privacy Policy</h1>
+                
+                <div class="info-content">
+                    <p>
+                        At <strong>Sniplink</strong>, your privacy is our top priority. We believe in simplicity and utility without invasive data harvesting. This Privacy Policy details how we handle the minimal data generated when you use our service.
+                    </p>
+
+                    <h2>1. Information We Do Not Collect</h2>
+                    <p>
+                        Unlike traditional link shorteners or analytics platforms, Sniplink does <strong>not</strong> collect or store:
+                    </p>
+                    <ul>
+                        <li>Your IP address or geographic location</li>
+                        <li>Browser user-agent, device details, or operating system characteristics</li>
+                        <li>Personal identifying information (PII) such as your name, phone number, or physical address</li>
+                        <li>Tracking histories across third-party websites</li>
+                    </ul>
+
+                    <h2>2. Information We Do Collect</h2>
+                    <p>
+                        To perform the core URL redirection service and display statistics, our backend database stores:
+                    </p>
+                    <ul>
+                        <li>The <strong>Original URL</strong> you request to shorten.</li>
+                        <li>The generated <strong>Short Code</strong> linked to that original URL.</li>
+                        <li>The **Creation Date & Time** of the shortened link.</li>
+                        <li>An aggregate **Click Counter** that increments each time the redirect link is accessed.</li>
+                    </ul>
+
+                    <h2>3. Cookies and LocalStorage</h2>
+                    <p>
+                        We do **not** use tracking, analytics, advertising, or profiling cookies on our server. 
+                    </p>
+                    <p>
+                        To allow you to keep track of the URLs you have shortened, we utilize standard HTML5 **LocalStorage** directly inside your web browser. 
+                        This feature saves your recent link records strictly on your physical device. It is never uploaded, shared with, or accessible by our servers or any third parties. You can clear this history at any time by clearing your browser's site data.
+                    </p>
+
+                    <h2>4. Security</h2>
+                    <p>
+                        We employ standard data protection methods to safeguard the link configurations stored in our database. However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security.
+                    </p>
+
+                    <h2>5. Third-Party Links</h2>
+                    <p>
+                        Our service redirects users to external web links created by other individuals. Sniplink is not responsible for the privacy practices, cookie policies, or content of those destination websites. We highly recommend reviewing the privacy policies of any third-party websites you visit.
+                    </p>
+
+                    <h2>6. Contact Us</h2>
+                    <p>
+                        If you have questions regarding this Privacy Policy, feel free to reach out to the developer at <a href="mailto:syeds.devs@gmail.com">syeds.devs@gmail.com</a>.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built by <strong>Syed</strong> &bull; <a href="https://github.com/Syedx2/CodeAlpha_URLShortener" target="_blank" rel="noopener">CodeAlpha</a> Internship 2026</p>
+            <nav class="footer__nav" aria-label="Footer Navigation">
+                <a href="/about">About</a>
+                <span class="footer__nav-separator">&bull;</span>
+                <a href="/privacy">Privacy Policy</a>
+                <span class="footer__nav-separator">&bull;</span>
+                <a href="/terms">Terms of Service</a>
+            </nav>
+            <div class="footer__links">
+                <a href="https://github.com/Syedx2" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/syed-abdul-raheem-7bb8453a9" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:syeds.devs@gmail.com" aria-label="Email" title="Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                </a>
+            </div>
+            <p class="footer__tech">Flask &bull; PostgreSQL &bull; Vercel</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

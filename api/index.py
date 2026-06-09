@@ -67,6 +67,36 @@ def favicon():
     return send_from_directory(STATIC_DIR, "favicon.svg")
 
 
+@app.route("/about")
+def about_page():
+    """Serve the about page."""
+    return send_from_directory(STATIC_DIR, "about.html")
+
+
+@app.route("/privacy")
+def privacy_page():
+    """Serve the privacy policy page."""
+    return send_from_directory(STATIC_DIR, "privacy.html")
+
+
+@app.route("/terms")
+def terms_page():
+    """Serve the terms of service page."""
+    return send_from_directory(STATIC_DIR, "terms.html")
+
+
+@app.route("/robots.txt")
+def robots_txt():
+    """Serve robots.txt."""
+    return send_from_directory(STATIC_DIR, "robots.txt")
+
+
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    """Serve sitemap.xml."""
+    return send_from_directory(STATIC_DIR, "sitemap.xml")
+
+
 # ---------------------------------------------------------------------------
 # Routes — API
 # ---------------------------------------------------------------------------
@@ -143,8 +173,8 @@ def health_check():
 @app.route("/<short_code>")
 def redirect_to_url(short_code):
     """Look up the short code and redirect (302) to the original URL."""
-    # Skip common static file requests
-    if short_code in ("favicon.ico", "robots.txt", "sitemap.xml"):
+    # Skip common static page and file requests
+    if short_code in ("favicon.ico", "robots.txt", "sitemap.xml", "about", "privacy", "terms"):
         abort(404)
 
     original_url = database.get_url(short_code)

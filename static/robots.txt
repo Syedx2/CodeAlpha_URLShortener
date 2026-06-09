@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /$
+Allow: /about
+Allow: /privacy
+Allow: /terms
+Allow: /static/
+Disallow: /api/
+Disallow: /
+
+Sitemap: https://sniplink.vercel.app/sitemap.xml

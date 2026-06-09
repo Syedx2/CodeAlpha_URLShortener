@@ -1,0 +1,13 @@
+{
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/favicon.svg", "dest": "/static/favicon.svg" },
+    { "src": "/(.*)", "dest": "/api/index.py" }
+  ]
+}
